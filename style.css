@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Cormorant:ital,wght@0,600;1,600&family=Jersey+15&family=Playwrite+AU+SA:wght@100..400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boldonse&family=Bungee+Tint&family=Cormorant:ital,wght@0,600;1,600&family=Jersey+15&family=Playwrite+AU+SA:wght@100..400&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "Cormorant", serif;
+}
+body {
+  background: linear-gradient(45deg, #d30b0b, #471b0c);
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.main-container {
+  background: linear-gradient(to center, #b90606, #471b0c);
+  box-shadow: 34px 34px 10px rgba(76, 10, 10, 0.42);
+  border-radius: 30px;
+  width: 500px;
+  height: 500px;
+}
+.sub-container {
+  margin: 40px;
+  padding: 40px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.header label {
+  color: whitesmoke;
+}
+#movie {
+  height: 24px;
+  padding: 4px;
+  border-radius: 5px;
+  border: 0;
+  font-size: 11px;
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#movie:focus {
+  outline: none;
+}
+.showcase {
+  background-color: rgb(101, 16, 16, 0.3);
+  border-radius: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.showcase li {
+  display: flex;
+}
+.showcase li small {
+  margin-left: 2px;
+}
+.seat {
+  background-color: #444451;
+  height: 12px;
+  width: 15px;
+  margin: 3px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.seat.selected {
+  background-color: #6feaf6;
+}
+.seat.occupied {
+  background-color: rgb(175, 167, 167);
+}
+.seat:nth-of-type(2) {
+  margin-right: 18px;
+}
+.seat:nth-last-of-type(2) {
+  margin-left: 18px;
+}
+.seat:not(.occupied):hover {
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.showcase .seat:not(.occupied):hover {
+  cursor: default;
+  transform: scale(1);
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.screen {
+  background-color: rgb(203, 194, 194);
+  height: 70px;
+  width: 100%;
+  margin: 15px 0;
+  transform: rotateX(-45deg);
+  box-shadow: 0 3px 10px rgba(255, 255, 255, 0.734);
+}
+.container {
+  perspective: 1000px;
+}
+p.text {
+  margin: 45px 0;
+  text-align: center;
+}
+p.text span {
+  color: #6feaf6;
+}
+.footer {
+  color: whitesmoke;
+}
